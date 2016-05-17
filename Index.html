@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link href="stylesheets/body.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<section>
+		<input type="text" placeholder="Type Your Age Here" id="age">
+
+		<p>&amp;</p>
+
+		<div class="result">
+			<p id="results"></p>
+		</div>
+	</section>
+</body>
+
+<script>
+	document.addEventListener('keydown', function(e){
+		if(e.keyCode == 13) {
+			ageSomething(e);
+		}
+	});
+
+	function ageSomething(e) {
+		var age = document.getElementById('age').value;
+
+		if (age >= 0 && age <=10) {
+			document.getElementById('results').innerHTML = 'Still a kid!';
+		} 
+		else if (age > 10 && age <= 20) {
+			document.getElementById('results').innerHTML = 'Still a teen!';
+		}
+		else if (age >20 && age <= 30) {
+			document.getElementById('results').innerHTML = 'Still a young adult.';
+		} 
+		else if (age >30 && age <= 60) {
+			document.getElementById('results').innerHTML = 'An adult.';
+		}
+		else {
+			document.getElementById('results').innerHTML = 'No Idea';
+		}
+	}
+</script>
+</html>

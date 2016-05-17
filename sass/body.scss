@@ -1,0 +1,53 @@
+body {
+	background-color: #f7f7f7;
+	font-family: "Courier New", Courier, monospace;
+	color: #444444;
+	text-align: center;
+	margin-top: 10%;
+
+	p { 
+		font-size: 70px; 
+		margin: 0px;
+	}
+
+	section {
+		width: 600px;
+		height: 400px;
+		padding: 30px;
+		margin: 0 auto;
+	}
+
+	#age {
+		background-color: transparent;
+		border: none;
+		border-bottom: 2px solid #253237;
+		padding: 20px 0px;
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		font-size: 60px;
+		color: #444444;
+
+		&::-webkit-input-placeholder {
+		    color:    #444444;
+		}
+
+		&:focus {
+		  outline-color: transparent;
+		  outline-style: none;
+		}
+	}
+
+	#results {
+		padding: 20px 0px;
+		font-family: "Arial";
+		width: 600px;
+		height: 100px;
+		text-align: center;
+		font-size: 80px;
+		color: #444444;
+		border: none;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}

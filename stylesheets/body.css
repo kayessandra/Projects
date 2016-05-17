@@ -1,0 +1,54 @@
+/* line 1, ../sass/body.scss */
+body {
+  background-color: #f7f7f7;
+  font-family: "Courier New", Courier, monospace;
+  color: #444444;
+  text-align: center;
+  margin-top: 10%;
+}
+/* line 8, ../sass/body.scss */
+body p {
+  font-size: 70px;
+  margin: 0px;
+}
+/* line 13, ../sass/body.scss */
+body section {
+  width: 600px;
+  height: 400px;
+  padding: 30px;
+  margin: 0 auto;
+}
+/* line 20, ../sass/body.scss */
+body #age {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #253237;
+  padding: 20px 0px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 60px;
+  color: #444444;
+}
+/* line 31, ../sass/body.scss */
+body #age::-webkit-input-placeholder {
+  color: #444444;
+}
+/* line 35, ../sass/body.scss */
+body #age:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+/* line 41, ../sass/body.scss */
+body #results {
+  padding: 20px 0px;
+  font-family: "Arial";
+  width: 600px;
+  height: 100px;
+  text-align: center;
+  font-size: 80px;
+  color: #444444;
+  border: none;
+  display: table-cell;
+  vertical-align: middle;
+}
